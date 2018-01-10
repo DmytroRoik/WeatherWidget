@@ -4,9 +4,26 @@
 	<meta charset="UTF-8">
 	<title>darksky.net</title>
 	<link rel="stylesheet" href="css/index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 </head>
 <body>
-	
-	<script src="js/index.js"></script>
+	<div class="weather-widget">
+   <div class="widget-header"></div>
+   <div class="weather-info">
+     <div class="widget-date"></div>
+     <div class="widget-time"></div>
+     <div class="widget-temperatureMin"></div>
+     <div class="widget-temperatureMax"></div>
+     <div class="widget-humidity"></div>
+     <div class="widget-weatherIcon"></div>
+     <div class="widget-descr"></div>
+   </div>
+   <div class="buttons">
+    <button onclick="prevDay(this)" class="btnPrev">Prev</button>
+    <button onclick="nextDay(this)">Next</button>
+  </div>
+</div>
+
+<script src="js/index.js"></script>
 </body>
 </html>
