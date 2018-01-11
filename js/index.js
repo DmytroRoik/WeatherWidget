@@ -62,7 +62,7 @@ function updateWidget(response){
 
   document.getElementsByClassName('widget-header')[0].innerText=cityname;
   document.getElementsByClassName('widget-date')[0].innerText=datetime.format('L');
-  document.getElementsByClassName('widget-time')[0].innerText=datetime.format('LT');
+  document.getElementsByClassName('widget-time')[0].innerText=time.format('LT');
   document.getElementsByClassName('widget-temperatureMin')[0].innerHTML="Min: "+dailyWeather.temperatureLow+'&deg;';
   document.getElementsByClassName('widget-temperatureMax')[0].innerHTML="Max: "+dailyWeather.temperatureMax+'&deg;';
   document.getElementsByClassName('widget-humidity')[0].innerText='Вологість:  '+dailyWeather.humidity*100+'%';
